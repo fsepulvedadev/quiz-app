@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import PreguntasProvider from "../context/PreguntasProvider";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <PreguntasProvider>
+      <Component {...pageProps} />
+    </PreguntasProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
