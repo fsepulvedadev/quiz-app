@@ -35,6 +35,33 @@ const PreguntasProvider = ({ children }) => {
         { res: "Australia", correcta: false, id: 4 },
       ],
     },
+    {
+      pregunta: "¿Cual es la ciudad capital de Honduras?",
+      respuestas: [
+        { res: "Tegucigalpa", correcta: true, id: 1 },
+        { res: "Juticalpa", correcta: false, id: 2 },
+        { res: "Nacaome", correcta: false, id: 3 },
+        { res: "Yoro", correcta: false, id: 4 },
+      ],
+    },
+    {
+      pregunta: "¿Cual es el ultimo modelo de iPhone?",
+      respuestas: [
+        { res: "iPhone 15", correcta: false, id: 1 },
+        { res: "iPhone 13", correcta: false, id: 2 },
+        { res: "iPhone 14", correcta: true, id: 3 },
+        { res: "iPhone 13 pro", correcta: false, id: 4 },
+      ],
+    },
+    {
+      pregunta: "¿Cual de estos modelos de Ford no es una camioneta?",
+      respuestas: [
+        { res: "Mondeo", correcta: true, id: 1 },
+        { res: "Ranger", correcta: false, id: 2 },
+        { res: "Territory", correcta: false, id: 3 },
+        { res: "Ecosport", correcta: false, id: 4 },
+      ],
+    },
   ]);
   const [preguntasOrdenadas, setPreguntasOrdenadas] = useState([]);
   const [correctas, setCorrectas] = useState(0);
